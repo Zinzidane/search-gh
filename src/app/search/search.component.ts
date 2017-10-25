@@ -7,7 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchComponent implements OnInit {
 
+	searchStr: string = '';
+	minLength: number = 3;
+
   constructor() { }
+
+  handleChange() {
+  	console.log(this.searchStr);
+  }
 
   ngOnInit() {
   }

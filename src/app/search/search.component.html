@@ -5,9 +5,12 @@
 			<input 
 				matInput 
 				placeholder="Start typing user name"
+				[minlength]="minLength"
+				[(ngModel)]="searchStr"
+				(ngModelChange)="handleChange()"
 			>
 			<mat-error>
-	      
+	      Min length is {{ minLength }}. Now it is {{ searchStr.length }}
 	    </mat-error>
 		</mat-form-field>
 	</div>

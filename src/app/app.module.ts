@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule, MatInputModule, MatCardModule, MatButtonModule } from '@angular/material';
+import { FormsModule } from '@angular/forms';
+
 
 import { AppComponent } from './app.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
@@ -19,7 +21,8 @@ import { SearchComponent } from './search/search.component';
 	MatToolbarModule,
 	MatInputModule,
 	MatCardModule,
-	MatButtonModule
+	MatButtonModule,
+	FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
