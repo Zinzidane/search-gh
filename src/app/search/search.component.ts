@@ -9,7 +9,7 @@ import { UsersService } from '../users.service';
 export class SearchComponent {
 
 	searchStr: string = '';
-	minLength: number = 3;
+	minLength: number = 2;
 	isLoaded: boolean = false;
   user: any;
 
