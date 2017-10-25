@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule, MatInputModule, MatCardModule, MatButtonModule } from '@angular/material';
 import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
+import { UsersService } from './users.service';
 
 
 import { AppComponent } from './app.component';
@@ -22,9 +24,10 @@ import { SearchComponent } from './search/search.component';
 	MatInputModule,
 	MatCardModule,
 	MatButtonModule,
-	FormsModule
+	FormsModule,
+	HttpModule
   ],
-  providers: [],
+  providers: [UsersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
